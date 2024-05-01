@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Crack The Flag</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/vendor/flip/flip.min.css" />
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css" />
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg_brand fixed-top"
+      data-aos="fade-down"
+    >
+      <div class="container">
+        <!-- Logo on the left -->
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/ctf.png" alt="Your Logo" height="40" />
+        </a>
+
+        <!-- Navbar toggle button for small screens -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar menu on the right -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#timeline">Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#challange">Challanges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#prize">Prize Pool</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#partner">Sponsor</a>
+            </li>
+            <!-- Add more menu items as needed -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content goes here -->
+    <section class="hero text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div onmouseenter="revealAgain();">
+              <h1 class="baffle-text">Welcome to Crack The Flag CTF Contest-2024</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="custom_btn" data-aos="zoom-in">
+            <a class="btn btn_cstm btn-lg" href="#">Registration now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section class="overview" id="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <div class="overview_title" data-aos="fade-right">
+              <h2>Overview</h2>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-8 col-sm-12">
+            <div class="overview_cont" data-aos="fade-left">
+              <p>
+                Cyber security is the application of technologies, processes,
+                and controls to protect systems, networks, programs, devices and
+                data from cyber attacks. It aims to reduce the risk of cyber
+                attacks and protect against the unauthorised exploitation of
+                systems, networks, and technologies. <br />
+                The world of Cyber Security revolves around the industry
+                standard of confidentiality, integrity, and availability, or
+                CIA. Privacy means data can be accessed only by authorized
+                parties; integrity means information can be added, altered, or
+                removed only by authorized users; and availability means
+                systems, functions, and data must be available on-demand
+                according to agreed-upon parameters. <br />
+                The main element of Cyber Security is the use of authentication
+                mechanisms. For example, a user name identifies an account that
+                a user wants to access, while a password is a mechanism that
+                proves the user is who he claims to be.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Time Line -->
+    <section class="timer" id="timeline">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div
+              class="tick"
+              data-did-init="handleTickInit"
+              data-aos="zoom-out"
+            >
+              <div
+                data-repeat="true"
+                data-layout="horizontal center fit"
+                data-transform="preset(d, h, m, s) -> delay"
+              >
+                <!-- Timer Group 1 -->
+                <div class="tick-group">
+                  <div
+                    data-key="value"
+                    data-repeat="true"
+                    data-transform="pad(00) -> split -> delay"
+                  >
+                    <span data-view="flip"></span>
+                  </div>
+                </div>
+                <!-- Timer Group 2 -->
+                <div class="tick-group">
+                  <div
+                    data-key="value"
+                    data-repeat="true"
+                    data-transform="pad(00) -> split -> delay"
+                  >
+                    <span data-view="flip"></span>
+                  </div>
+                </div>
+                <!-- Add more timer groups as needed -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event -->
+    <section class="event">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 com-sm-12">
+            <div
+              class="card bg-dark text-light text-center smmb_10"
+              data-aos="fade-left"
+            >
+              <div class="card-header pdb_25 pb-0 pd_18">
+                <h3>ABOUT THE EVENT HUNT 2024</h3>
+                <h5 class="brand_color">January 20th - 29th, 2024</h5>
+              </div>
+              <div class="card-body pdb_25 pd_18">
+                <h6 class="brand_color">
+                  Please read the instructions carefully and fill out the form.
+                </h6>
+                <div class="event_details">
+                  <div class="mb-3">
+                    <p class="mb-1">PRE-QUALIFY ROUND</p>
+                    <strong class="brand_color"
+                      >Saturday, January 20, 2024</strong
+                    >
+                  </div>
+                  <div class="mb-3">
+                    <p class="mb-1">FINAL ROUND</p>
+                    <strong class="brand_color"
+                      >Monday, January 29, 2024</strong
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 com-sm-12 order-md-first">
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div
+                  class="card bg-dark text-light smmb_10"
+                  data-aos="fade-down-right"
+                >
+                  <div class="card-body pdb_25 text-center">
+                    <h5>Event Type</h5>
+                    <p class="mb-0 brand_color">Flag Hunt Contest</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div
+                  class="card bg-dark text-light smmb_10"
+                  data-aos="fade-down"
+                >
+                  <div class="card-body pdb_25 text-center">
+                    <h5>Venue</h5>
+                    <p class="mb-0 brand_color">Uttara University</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div
+                  class="card bg-dark text-light smmb_10"
+                  data-aos="fade-down-left"
+                >
+                  <div class="card-body pdb_25 text-center">
+                    <h5>Entry Fee</h5>
+                    <p class="mb-0 brand_color">Free</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div
+                  class="card bg-dark text-light smmb_10"
+                  data-aos="fade-up-right"
+                >
+                  <div class="card-body pdb_25 text-center">
+                    <h5>Team Size</h5>
+                    <p class="mb-0 brand_color">4 person/team</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="card bg-dark text-light smmb_10" data-aos="fade-up">
+                  <div class="card-body pdb_25 text-center">
+                    <h5>Difficulty</h5>
+                    <p class="mb-0 brand_color">Easy to Hard</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6">
+                <div
+                  class="card bg-dark text-light smmb_10"
+                  data-aos="fade-up-left"
+                >
+                  <div class="card-body pdb_25 text-center">
+                    <h5>CTF Style</h5>
+                    <p class="mb-0 brand_color">Jeopardy</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="about_title text-light pdb_25 pd_18" data-aos="fade-up">
+              <h2>About The Event</h2>
+              <h6 class="brand_color">
+                A community of like minded individuals who support cybersecurity
+                and FOSS.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light mb-3" data-aos="fade-up">
+                  <div class="card-body pd_18">
+                    <h5 class="brand_color">What is Capture the Flag?</h5>
+                    <p class="text_justify text-light">
+                      A capture the flag (CTF) contest is a special kind of
+                      cybersecurity competition designed to challenge its
+                      participants to solve computer security problems and/or
+                      capture and defend computer systems. The game consists of
+                      a series of challenges where participants must reverse
+                      engineer, break, hack, decrypt, or do whatever it takes to
+                      solve the challenge. The challenges are all set up with
+                      the intent of being hacked, making it an excellent, legal
+                      way to get hands-on experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-dark text-light mb-3" data-aos="fade-up">
+                  <div class="card-body pd_18">
+                    <h5 class="brand_color">Who can play Crack The Flag?</h5>
+                    <p class="text_justify text-light">
+                      Crack The Flag is mainly focused at students who are
+                      undergraduates.
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-dark text-light" data-aos="fade-up">
+                  <div class="card-body pd_18">
+                    <h5 class="brand_color">Why Join?</h5>
+                    <p class="text_justify text-light">
+                      Glory, learning, prizes
+                    </p>
+                    <h5 class="brand_color">Hack amazing content</h5>
+                    <p class="text_justify text-light">
+                      Learn with the best hacking content from the Bangladeshi
+                      CTF community!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="card bg-dark text-light mb-3" data-aos="fade-up">
+                  <div class="card-body pd_18">
+                    <h5 class="brand_color">About Crack The Flag</h5>
+                    <p class="text_justify text-light">
+                      Crack The Flag is a sub event of PICT's Impetus and
+                      Concepts mega event where students partcipate from all
+                      over the world! <br />
+                      Out aim is about spreading the importance of cybersecurity
+                      in today's community. Each and every person should be
+                      aware of different vulnerabilities in systems as well as
+                      how to protect onselves agains cyber attacks. <br />
+                      We believe gamification is the best technique to teach
+                      oneself about cybersecurity. o get hands-on experience.
+                    </p>
+                  </div>
+                </div>
+                <div class="card bg-dark text-light mb-3" data-aos="fade-up">
+                  <div class="card-body pd_18">
+                    <h5 class="brand_color">Win the best prizes</h5>
+                    <p class="text_justify text-light">
+                      A never-seen-before prize list is awaiting the top teams!
+                    </p>
+                    <h5 class="brand_color">Climb the scoreboard</h5>
+                    <p class="text_justify text-light">
+                      Achieve eternal glory and show your team is the best!
+                    </p>
+                    <h5 class="brand_color">Get CTF-Certified</h5>
+                    <p class="text_justify text-light">
+                      For all players with 200+ points.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 order-md-first">
+            <div class="about_img">
+              <div class="mb-5" data-aos="fade-left">
+                <img src="assets/images/ctf.png" class="w-100" alt="ctf"/>
+              </div>
+              <div class="mb-5" data-aos="fade-right">
+                <h3 class="text-light fw-bolder">TITLE SPONSOR</h3>
+                <img src="assets/images/UU.png" class="w-100" alt="uu"/>
+              </div>
+              <div class="mb-5" data-aos="fade-left">
+                <h3 class="text-light fw-bolder">TECHNICAL PARTNER</h3>
+                <img
+                  src="assets/images/sponsor/Vulnsyslogo.png"
+                  class="w-100" alt="uu"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge bg-dark py-5" id="challange">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section_header text-center pd_18">
+              <h2>Challanges Category</h2>
+              <h6 class="brand_color">More then 40+ challanges to take on.</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-2 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/web.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">WEB</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-2 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/pwn.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">PWN</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-2 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/crypto.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">CRYPTO</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-2 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/forensics.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">FORENSICS</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-2 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/reverse.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">REVERSING</h4>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="clng_content text-center p-3 my-32 bg_brand rounded-2"
+              data-aos="fade-up"
+            >
+              <img
+                src="assets/images/challange/misc.png"
+                alt="Web"
+                height="80"
+              />
+              <h4 class="text-light mb-0 mt-3 fw-bolder">MISC</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prize_pool text-center" id="prize">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="prize_title pd_18">
+              <h2>PRIZE POOL</h2>
+              <h6 class="brand_color">
+                A community of like minded individuals who support cybersecurity
+                and FOSS.
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 mtsm_0">
+          <div class="col-md-4">
+            <div class="box-item" data-aos="fade-up">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center bg-dark"
+                  style="background-image: url('assets/images/front.jpg')"
+                >
+                  <div class="inner text-light">
+                    <img
+                      src="assets/images/1st_price.png"
+                      alt="Runner Up"
+                      class="flip-box-img w-100"
+                    />
+                    <h3 class="flip-box-header">champion</h3>
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="
+                    background-image: url('assets/images/flip_card_bg.jpg');
+                  "
+                >
+                  <div class="inner text-light">
+                    <h3 class="flip-box-header">champion</h3>
+                    <p>TBA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 order-md-first">
+            <div class="box-item mt_50" data-aos="fade-up-right">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center bg-dark"
+                  style="background-image: url('assets/images/front.jpg')"
+                >
+                  <div class="inner text-light">
+                    <img
+                      src="assets/images/2nd_price.png"
+                      alt="Runner Up"
+                      class="flip-box-img w-100"
+                    />
+                    <h3 class="flip-box-header">Runner UP</h3>
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="
+                    background-image: url('assets/images/flip_card_bg.jpg');
+                  "
+                >
+                  <div class="inner text-light">
+                    <h3 class="flip-box-header">Runner UP</h3>
+                    <p>TBA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="box-item mt_50" data-aos="fade-up-left">
+              <div class="flip-box">
+                <div
+                  class="flip-box-front text-center bg-dark"
+                  style="background-image: url('assets/images/front.jpg')"
+                >
+                  <div class="inner text-light">
+                    <img
+                      src="assets/images/3rd_price.png"
+                      alt="Runner Up"
+                      class="flip-box-img w-100"
+                    />
+                    <h3 class="flip-box-header">2nd Runner UP</h3>
+                  </div>
+                </div>
+                <div
+                  class="flip-box-back text-center"
+                  style="
+                    background-image: url('assets/images/flip_card_bg.jpg');
+                  "
+                >
+                  <div class="inner text-light">
+                    <h3 class="flip-box-header">2nd Runner UP</h3>
+                    <p>TBA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partner text-center" id="partner">
+      <div class="container">
+        <div class="row mb-5" data-aos="fade-up">
+          <div class="col-md-12">
+            <div class="partner_title">
+              <h2>Platinum Sponsor</h2>
+            </div>
+            <div class="platinum_logo mt-3">
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techteam.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/rocky.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techteam.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/rocky.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techteam.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/rocky.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 mt-5" data-aos="fade-up">
+          <div class="col-md-12">
+            <div class="partner_title">
+              <h2>Gold Sponsor</h2>
+            </div>
+            <div class="gold_logo mt-3">
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techcampus.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/tm.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techcampus.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/tm.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/techcampus.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/tm.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 mt-5" data-aos="fade-up">
+          <div class="col-md-12">
+            <div class="partner_title">
+              <h2>Silver Sponsor</h2>
+            </div>
+            <div class="silver_logo mt-3">
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/hr.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/team.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/hr.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/team.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/hr.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+              <div class="cntr">
+                <img
+                  src="assets/images/sponsor/team.png"
+                  alt="tech_team"
+                  height="80"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-left">
+            <div class="footer_logo">
+              <img src="assets/images/UU.png" alt="Uttara University Logo" />
+              <img src="assets/images/White_Cyber Security Club Logo (2).png" alt="Cyber Security Club Logo">
+              <img src="assets/images/cybercon.png" alt="Cybercon Logo" />
+            </div>
+            <div class="footer_content pd_18 mt-3">
+              <p class="text_justify text-light">
+                Cras fermentum odio eu feugiat lide par naso tierra. Justo eget
+                nada terra videa magna derita valies darta donna mare fermentum
+                iaculis eu non diam phasellus.
+              </p>
+            </div>
+            <div class="social_icon mt-3">
+              <ul>
+                <li>
+                  <a href="#" class="text-light"
+                    ><i class="fa-brands fa-facebook fa-2xl"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-light"
+                    ><i class="fa-brands fa-x-twitter fa-2xl"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-light"
+                    ><i class="fa-brands fa-linkedin fa-2xl"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#" class="text-light"
+                    ><i class="fa-brands fa-instagram fa-2xl"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-right">
+            <div class="contact text-end">
+              <div class="contact_title">
+                <h2 class="text-light fw-bolder">CONTACT US</h2>
+              </div>
+              <div class="coantact_content mt-2">
+                <h3 class="text-light mb-0">Cyber Security Club</h3>
+                <h4 class="text-light">Uttara University</h4>
+                <h6 class="text-light">
+                  Plot 5, Dhour Road, Turag, Uttara, Dhaka, Bangladesh
+                </h6>
+                <h6 class="text-light">
+                  <a class="text-light" href="mailto:support@cracktheflag.com"
+                    >support@cracktheflag.com</a
+                  >
+                </h6>
+                <h6 class="text-light">
+                  Mobile:
+                  <a class="text-light" href="tel:01770-921384">01770-921384</a
+                  >,
+                  <a class="text-light" href="tel:01590-097999">01590-097999</a>
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="copyright py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-light pd_18 mb-0">
+              Copyright &copy; All rights reserved by Cyber Security Club, UU.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="backToTop"><i class="fa-solid fa-caret-up"></i></a>
+
+    <!-- Bootstrap JS (optional, if you need to use Bootstrap JavaScript features) -->
+    <!-- jQuery (full version) -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="assets/vendor/flip/flip.min.js"></script>
+    <script src="assets/js/baffle.min.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
